@@ -1,5 +1,6 @@
 package com.example.lechant;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -52,8 +53,15 @@ public class Classical extends Fragment {
         tvBalDes = view.findViewById(R.id.tv_desc_bal);
 
         btnAbout = view.findViewById(R.id.btn_about);
+        btnAbout.setOnClickListener(v ->{
+            Intent aboutIntent = new Intent(getActivity(),AboutClassic.class);
+            aboutIntent.putExtra(EXTRA_DESCRIPTION,"Classical music is a term that most commonly refers to the formal musical tradition of the Western world, considered to be distinct from Western folk music or popular music traditions." +
+                    " In a more general sense, the term may also refer to music evidencing similar formal qualities in non-Western cultures.");
+            startActivity(aboutIntent);
+        });
 
         btnMusic = view.findViewById(R.id.btn_music);
+
 
         btnMusicien = view.findViewById(R.id.btn_musicien);
         btnMusicien.setOnClickListener(v -> {
