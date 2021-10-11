@@ -3,36 +3,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:orientation="vertical">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:id="@+id/tv_balad"
+        android:id="@+id/tv_tittle_balad"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="Classical"/>
+        android:text="Tittle"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
     <TextView
-        android:id="@+id/tv_desc_bal"
+        android:id="@+id/tv_desc_balad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="description"
+        android:layout_marginBottom="16dp"/>
+    <Button
+        android:id="@+id/btn_region"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:text="classical description"/>
+        android:text="Region"/>
     <Button
-        android:id="@+id/btn_musicien"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="Musicien"/>
-    <Button
-        android:id="@+id/btn_music"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="Music"/>
-    <Button
-        android:id="@+id/btn_about"
+        android:id="@+id/btn_about_balad"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="About"/>

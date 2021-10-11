@@ -33,13 +33,16 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         super.onViewCreated(view, savedInstanceState);
 
 
-        Button btnMusic = view.findViewById(R.id.btn_balad);
-        btnMusic.setOnClickListener(this);
+        Button btnClassical = view.findViewById(R.id.btn_classical);
+        btnClassical.setOnClickListener(this);
+
+        Button btnBalad = view.findViewById(R.id.btn_balad);
+        btnBalad.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View view) {
-        if(view.getId() == R.id.btn_balad){
+        if(view.getId() == R.id.btn_classical){
             Classical classical = new Classical();
             Bundle mBundle = new Bundle();
             mBundle.putString(Classical.EXTRA_NAME,"La musique de Classique");
@@ -53,6 +56,17 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
                 fragmentManager
                         .beginTransaction()
                         .replace(R.id.frame_container, classical, Classical.class.getSimpleName())
+                        .addToBackStack(null)
+                        .commit();
+            }
+        }else if(view.getId() == R.id.btn_balad){
+            Balad balad = new Balad();
+
+            FragmentManager fragmentManager = getParentFragmentManager();
+            if(fragmentManager != null){
+                fragmentManager
+                        .beginTransaction()
+                        .replace(R.id.frame_container,balad,Balad.class.getSimpleName())
                         .addToBackStack(null)
                         .commit();
             }

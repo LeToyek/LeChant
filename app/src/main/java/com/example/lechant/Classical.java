@@ -42,15 +42,15 @@ public class Classical extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_musicien, container, false);
+        return inflater.inflate(R.layout.fragment_classical, container, false);
 
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        tvBalad = view.findViewById(R.id.tv_balad);
-        tvBalDes = view.findViewById(R.id.tv_desc_bal);
+        tvBalad = view.findViewById(R.id.tv_classical);
+        tvBalDes = view.findViewById(R.id.tv_desc_classical);
 
         btnAbout = view.findViewById(R.id.btn_about);
         btnAbout.setOnClickListener(v ->{
@@ -61,6 +61,9 @@ public class Classical extends Fragment {
         });
 
         btnMusic = view.findViewById(R.id.btn_music);
+        btnMusic.setOnClickListener(v -> {
+
+        });
 
 
         btnMusicien = view.findViewById(R.id.btn_musicien);
