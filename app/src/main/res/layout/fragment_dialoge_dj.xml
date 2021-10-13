@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DialogeFragmentDj"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="who is your favourite DJ ?"/>
+    <RadioGroup
+        android:id="@+id/rg_option_dj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/rb_blyatman"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DJ Blyatman"
+            android:layout_marginBottom="16dp"/>
+        <RadioButton
+            android:id="@+id/rb_rvb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Russian Village Boy"
+            android:layout_marginBottom="16dp"/>
+        <RadioButton
+            android:id="@+id/rb_gopnik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gopnik"
+            android:layout_marginBottom="16dp"/>
+        <RadioButton
+            android:id="@+id/rb_stalin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DJ Stalin"
+            android:layout_marginBottom="16dp"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_close_hb"
+            style="?attr/buttonBarButtonStyle"
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:layout_marginEnd="4dp"
+            android:text="close"/>
+        <Button
+            android:id="@+id/btn_choose_hb"
+            style="?attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp"
+            android:text="Submit"/>
+    </LinearLayout>
+
+</LinearLayout>

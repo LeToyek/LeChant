@@ -3,10 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Maulana Arif/AndroidStudioProjects/LeChant/app/src/main/res/layout/activity_about_balad.xml" value="0.13333333333333333" />
         <entry key="..\:/Users/Maulana Arif/AndroidStudioProjects/LeChant/app/src/main/res/layout/activity_about_classic.xml" value="0.223731884057971" />
+        <entry key="..\:/Users/Maulana Arif/AndroidStudioProjects/LeChant/app/src/main/res/layout/activity_classical_music.xml" value="0.21965579710144928" />
         <entry key="..\:/Users/Maulana Arif/AndroidStudioProjects/LeChant/app/src/main/res/layout/activity_main.xml" value="0.22780797101449277" />
         <entry key="..\:/Users/Maulana Arif/AndroidStudioProjects/LeChant/app/src/main/res/layout/fragment_balad.xml" value="0.223731884057971" />
+        <entry key="..\:/Users/Maulana Arif/AndroidStudioProjects/LeChant/app/src/main/res/layout/fragment_classical.xml" value="0.21965579710144928" />
+        <entry key="..\:/Users/Maulana Arif/AndroidStudioProjects/LeChant/app/src/main/res/layout/fragment_dialoge_dj.xml" value="0.264" />
         <entry key="..\:/Users/Maulana Arif/AndroidStudioProjects/LeChant/app/src/main/res/layout/fragment_dialogue_musicien.xml" value="0.223731884057971" />
+        <entry key="..\:/Users/Maulana Arif/AndroidStudioProjects/LeChant/app/src/main/res/layout/fragment_hard_bass.xml" value="0.264" />
         <entry key="..\:/Users/Maulana Arif/AndroidStudioProjects/LeChant/app/src/main/res/layout/fragment_home.xml" value="0.22780797101449277" />
         <entry key="..\:/Users/Maulana Arif/AndroidStudioProjects/LeChant/app/src/main/res/layout/fragment_musicien.xml" value="0.22780797101449277" />
       </map>

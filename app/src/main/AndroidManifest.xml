@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LeChant">
         <activity
+            android:name=".AboutBalad"
+            android:exported="true" />
+        <activity
+            android:name=".ClassicalMusic"
+            android:exported="true" />
+        <activity
             android:name=".AboutClassic"
             android:exported="true" />
         <activity

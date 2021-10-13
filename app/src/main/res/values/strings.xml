@@ -3,4 +3,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="le_chants">Le Chants</string>
+    <string name="description">Classical music is a term that most commonly refers to the formal musical tradition of the Western world, considered to be distinct from Western folk music or popular music traditions. In a more general sense, the term may also refer to music evidencing similar formal qualities in non-Western cultures.</string>
+    <string name="titlehb">TitleHb</string>
+    <string name="descriptionhb">descriptionHb</string>
 </resources>

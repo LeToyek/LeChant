@@ -3,42 +3,39 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    tools:context=".HardBass"
+    android:orientation="vertical"
+    android:padding="16dp">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Le Chants"
-        android:textAlignment="center"
-        android:textSize="30dp"
+        android:text="@string/titlehb"
+        android:textSize="24sp"
         android:textStyle="bold"
-        android:layout_margin="16dp"/>
-    <Button
-        android:id="@+id/btn_classical"
+        android:layout_marginBottom="16dp"/>
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:text="Classical"
+        android:layout_marginBottom="16dp"
+        android:text="@string/descriptionhb" />
+    <Button
+        android:id="@+id/btn_dj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="DJ"/>
+    <Button
+        android:id="@+id/btn_music_hb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Music"
         android:layout_marginBottom="16dp"/>
     <Button
-        android:id="@+id/btn_balad"
+        android:id="@+id/btn_about_hb"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="16dp"
-        android:text="balad"/>
-    <Button
-        android:id="@+id/btn_hard_bass"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="16dp"
-        android:layout_marginLeft="16dp"
-        android:text="Hard Bass"/>
-
-
-
-
+        android:text="About"
+        android:layout_marginBottom="16dp"/>
 
 </LinearLayout>

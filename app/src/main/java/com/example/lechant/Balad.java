@@ -1,5 +1,6 @@
 package com.example.lechant;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -38,5 +39,9 @@ public class Balad extends Fragment {
 
         btnAbtBal = view.findViewById(R.id.btn_about_balad);
         btnRegion = view.findViewById(R.id.btn_region);
+        btnAbtBal.setOnClickListener(v ->{
+            Intent abtBal = new Intent(getActivity(),AboutBalad.class);
+            startActivity(abtBal);
+        });
     }
 }
