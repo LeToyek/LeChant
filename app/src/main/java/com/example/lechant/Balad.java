@@ -6,6 +6,7 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,7 +15,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 
-public class Balad extends Fragment {
+public class Balad extends Fragment{
 
     private Button btnRegion,btnAbtBal;
     private TextView tvDescBal,tvTittleBal;
@@ -39,6 +40,16 @@ public class Balad extends Fragment {
 
         btnAbtBal = view.findViewById(R.id.btn_about_balad);
         btnRegion = view.findViewById(R.id.btn_region);
+        btnRegion.setOnClickListener(v -> {
+            FragmentManager fragmentManager = getParentFragmentManager();
+            ReigonBalad regBalad = new ReigonBalad();
+            fragmentManager
+                    .beginTransaction()
+                    .replace(R.id.frame_container,regBalad,ReigonBalad.class.getSimpleName())
+                    .addToBackStack(null)
+                    .commit();
+        });
+
         btnAbtBal.setOnClickListener(v ->{
             Intent abtBal = new Intent(getActivity(),AboutBalad.class);
             startActivity(abtBal);

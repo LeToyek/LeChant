@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LeChant">
         <activity
+            android:name=".AboutHardBass"
+            android:exported="true" />
+        <activity
             android:name=".AboutBalad"
             android:exported="true" />
         <activity

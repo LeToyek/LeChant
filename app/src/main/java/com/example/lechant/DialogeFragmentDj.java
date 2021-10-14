@@ -41,7 +41,7 @@ public class DialogeFragmentDj extends DialogFragment {
         Button btnCloseHb = view.findViewById(R.id.btn_close_hb);
         Button btnChooseHb = view.findViewById(R.id.btn_choose_hb);
 
-        btnChooseHb.setOnClickListener(va -> {
+        btnChooseHb.setOnClickListener(v -> {
             int checkRadioButton = rgOptionHb.getCheckedRadioButtonId();
             if (checkRadioButton != -1){
                 String Dj = null;
@@ -57,16 +57,16 @@ public class DialogeFragmentDj extends DialogFragment {
                     onOptionDialogueListener.onOptionChoosen(Dj);
                 }
                 getDialog().dismiss();
-            }else{
-                btnCloseHb.setOnClickListener(v -> getDialog().cancel());
             }
+
         });
+        btnCloseHb.setOnClickListener(v -> getDialog().cancel());
     }
 
     @Override
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
-        Fragment fragment = new Fragment();
+        Fragment fragment = getParentFragment();
 
         if (fragment instanceof HardBass){
             HardBass hardBass = (HardBass) fragment;

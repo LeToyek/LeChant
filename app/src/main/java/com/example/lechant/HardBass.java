@@ -1,5 +1,6 @@
 package com.example.lechant;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -36,6 +37,12 @@ public class HardBass extends Fragment {
             DialogeFragmentDj dialogeFragmentDj = new DialogeFragmentDj();
             FragmentManager fragmentManager = getChildFragmentManager();
             dialogeFragmentDj.show(fragmentManager,DialogeFragmentDj.class.getSimpleName());
+        });
+
+        Button btnAbtHb = view.findViewById(R.id.btn_about_hb);
+        btnAbtHb.setOnClickListener(v -> {
+            Intent abtHbIntent = new Intent(getActivity(),AboutHardBass.class);
+            startActivity(abtHbIntent);
         });
     }
     DialogeFragmentDj.OnOptionDialogueListener optionDialogueListener = new DialogeFragmentDj.OnOptionDialogueListener() {
